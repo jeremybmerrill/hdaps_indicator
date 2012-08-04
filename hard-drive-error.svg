@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   enable-background="new 0 0 100 77"
+   xml:space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="hard-drive-error.svg"
+   inkscape:export-filename="/home/merrillj/hdaps_indicator/hard-drive-paused.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"><metadata
+   id="metadata11"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+   id="defs9" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1301"
+   inkscape:window-height="744"
+   id="namedview7"
+   showgrid="false"
+   inkscape:zoom="2.92"
+   inkscape:cx="51.19863"
+   inkscape:cy="38.5"
+   inkscape:window-x="65"
+   inkscape:window-y="24"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<path
+   style="fill:#efede9;fill-opacity:1"
+   d="M 26 21.5 L 10 76.5 L 110 76.5 L 94 21.5 L 26 21.5 z M 81.375 23.375 L 87.1875 29.1875 L 67 49.375 L 87.875 70.21875 L 82.0625 76.03125 L 61.1875 55.1875 L 40.6875 75.6875 L 34.875 69.875 L 55.375 49.375 L 35.5625 29.53125 L 41.375 23.71875 L 61.1875 43.5625 L 81.375 23.375 z "
+   id="polygon3" />
+<path
+   d="M 10,80.500004 V 98.5 H 110 V 80.500004 H 10 z m 66,13 c -2.209,0 -4,-1.79 -4,-4 0,-2.21 1.791,-4 4,-4 2.209,0 4,1.79 4,4 0,2.21 -1.791,4 -4,4 z m 12,0 c -2.209,0 -4,-1.79 -4,-4 0,-2.21 1.791,-4 4,-4 2.209,0 4,1.79 4,4 0,2.21 -1.791,4 -4,4 z m 12,0 c -2.209,0 -4,-1.79 -4,-4 0,-2.21 1.791,-4 4,-4 2.209,0 4,1.79 4,4 0,2.21 -1.791,4 -4,4 z"
+   id="path5"
+   style="fill:#efede9;fill-opacity:1"
+   inkscape:connector-curvature="0" />
+</svg>
