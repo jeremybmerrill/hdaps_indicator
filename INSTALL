@@ -1,0 +1,14 @@
+Installation Instructions
+Aug. 4, 2012
+
+1. Move/copy the .svg icons into /usr/share/icons/hicolor/scalable/devices
+
+e.g. $ sudo cp *.svg /usr/share/icons/hicolor/scalable/
+
+2. Regenerate the GTK icon cahce by running:
+
+$ sudo gtk-update-icon-cache /usr/share/icons/hicolor/
+
+3. Now start the applet, or add this to be run on startup:
+
+$ python indicator.py

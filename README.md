@@ -10,3 +10,5 @@ This software is available under a GPL v3 license, see the included LICENSE file
 This software is based almost entirely off of [Michael Orlitzky's xfce4 hdaps indicator](http://michael.orlitzky.com/code/xfce4-hdaps.php/ xfce4-hdaps), and [Julien Lavergne's AWN HDAPS indicator](http://bazaar.launchpad.net/~awn-extras/awn-extras/trunk/files/head:/applets/maintained/thinkhdaps/ awn-extras/thinkhdaps) and [Ubuntu's sample Python Unity indicator](http://developer.ubuntu.com/resources/technologies/application-indicators/ Unity).
 
 Pull requests and questions are welcomed. :)
+
+N.B. You have to move the icons into /usr/share/icons/hicolor/scalable/devices and then regenerate the GTK icon cache before the icon shows up. See INSTALL for more info.
