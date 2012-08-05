@@ -1,7 +1,7 @@
 #HDAPS Indicator for Ubuntu Unity
-##Jeremy B. Merrill
-##jeremy@jeremybmerrill.com
-##Copyright 2012 // GPL v3
+####Jeremy B. Merrill
+####jeremy@jeremybmerrill.com
+####Copyright 2012 // GPL v3
 
 This is a simple Unity indicator for laptops with HDAPS -- Hard Drive Active Protection System. I think this is only some Apple and Lenovo laptops. I use the tp_smapi module on my Lenovo laptop, but YMMV.
 
