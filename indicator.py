@@ -81,7 +81,8 @@ class ThinkHDAPSApplet:
     __hdaps_device = None
     __was_paused = False
     __error_occurred = False
-    __show_notifications = True
+    __n = None
+    __show_notifications = False
 
     def check_status_cb(self):
         """Check the status the hard disk monitored by HDAPS and change
@@ -95,29 +96,31 @@ class ThinkHDAPSApplet:
             if paused != self.__was_paused or self.__error_occurred:
               if paused:
                 self.ind.set_status(appindicator.STATUS_ATTENTION)
-                print "trying: paused"
-                if __show_notifications:
+                print "trying: paused, " + str(self.__show_notifications)
+                if self.__show_notifications:
                     pynotify.init("hard-drive-paused")
                     imageURI = 'file://' + os.path.abspath(os.path.curdir) + '/hard-drive-paused.svg'
-                    if (self.__n != None):
-                        self.__n.close()
-                    self.__n = pynotify.Notification("HDAPS", "Hard-disk drive was paused.", imageURI)
-                    self.__n.set_urgency(pynotify.URGENCY_CRITICAL);
+                    if (self.__n == None):
+                        self.__n = pynotify.Notification("HDAPS", "Hard-disk drive was paused.", imageURI)
+                        self.__n.set_urgency(pynotify.URGENCY_NORMAL)
+                        self.__n.set_timeout(1)
+                    else:
+                        self.__n.update("HDAPS", "Hard-disk drive was paused.", imageURI)
                     self.__n.show()
-                    self.__n.set_timeout(1)
 
               else:
                 self.ind.set_status(appindicator.STATUS_ACTIVE)
-                print "trying: notpaused"
-                if __show_notifications:
+                print "trying: notpaused, " + str(self.__show_notifications)
+                if self.__show_notifications:
                     pynotify.init("hard-drive-normal")
                     imageURI = 'file://' + os.path.abspath(os.path.curdir) + '/hard-drive-normal.svg'
-                    if (self.__n != None):
-                        self.__n.close()
-                    self.__n = pynotify.Notification("HDAPS", "Hard-disk drive was resumed.", imageURI)
-                    self.__n.set_urgency(pynotify.URGENCY_CRITICAL);
+                    if (self.__n == None):
+                        self.__n = pynotify.Notification("HDAPS", "Hard-disk drive was resumed.", imageURI)
+                        self.__n.set_urgency(pynotify.URGENCY_LOW);
+                        self.__n.set_timeout(1)
+                    else:
+                        self.__n.update("HDAPS", "Hard-disk drive was resumed.", imageURI)
                     self.__n.show()
-                    self.__n.set_timeout(1)
 
             if self.__error_occurred:
                 self.__error_occurred = False
@@ -135,9 +138,9 @@ class ThinkHDAPSApplet:
 
     def toggleNotifications(self, widget):
         if widget.active:
-            self.__show_notifications == True
+            self.__show_notifications = True
         else:
-            self.__show_notifications == False
+            self.__show_notifications = False
 
     def __init__(self):
         self.ind = appindicator.Indicator("new-hdaps-indicator",
@@ -192,6 +195,7 @@ class ThinkHDAPSApplet:
         self.notificationsItem = gtk.CheckMenuItem("Show Notifications")
         self.notificationsItem.set_active(True)
         self.notificationsItem.connect("activate", self.toggleNotifications)
+        self.notificationsItem.show()
         self.menu.append(self.notificationsItem)
         self.quit_item = gtk.MenuItem("Quit")
         self.quit_item.connect("activate", self.quit) 

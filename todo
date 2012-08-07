@@ -1,2 +1,6 @@
 install script:
   move svgs to /usr/share/icons/hicolor/scalable/devices/
+
+
+figure out a way to retain showNotifications state -- presumably a dotfile.
+make the notifications stick around for less time.
